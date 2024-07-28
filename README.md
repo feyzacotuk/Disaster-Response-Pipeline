@@ -53,29 +53,29 @@ A web application that:
    cd your_repository
 Install the required libraries:
 
- ```sh
-pip install -r requirements.txt
-Download NLTK data:
+  ```sh
+  pip install -r requirements.txt
+  Download NLTK data:
 
 
- ```sh
-python -m nltk.downloader punkt stopwords wordnet
-Running the Pipelines
-ETL Pipeline:
+   ```sh
+  python -m nltk.downloader punkt stopwords wordnet
+  Running the Pipelines
+  ETL Pipeline:
 
- ```sh
-python process_data.py disaster_messages.csv disaster_categories.csv DisasterResponse.db
-ML Pipeline:
+   ```sh
+  python process_data.py disaster_messages.csv disaster_categories.csv DisasterResponse.db
+  ML Pipeline:
 
- ```sh
-python train_classifier.py DisasterResponse.db classifier.pkl
-Running the Web App
-Run the Flask app:
+   ```sh
+  python train_classifier.py DisasterResponse.db classifier.pkl
+  Running the Web App
+  Run the Flask app:
 
- ```sh
-python run.py
-Open the app in your browser:
-Navigate to http://localhost:3001/
+   ```sh
+  python run.py
+  Open the app in your browser:
+  Navigate to http://localhost:3001/
 
 File Descriptions
 process_data.py: Script to process and clean the data.
