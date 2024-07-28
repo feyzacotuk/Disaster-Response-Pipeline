@@ -52,33 +52,32 @@ A web application that:
    git clone https://github.com/your_username/your_repository.git
    cd your_repository
 
-
-
 2. Install the required libraries:
     ```sh
     pip install -r requirements.txt
 
 3. Download NLTK data:
-  ```sh
-  python -m nltk.downloader punkt stopwords wordnet
+    ```sh
+    python -m nltk.downloader punkt stopwords wordnet
 
-4.Running the Pipelines
+4. Running the Pipelines
 ETL Pipeline:
-  ```sh
-  python process_data.py disaster_messages.csv disaster_categories.csv DisasterResponse.db
-  ML Pipeline:
-
-   ```sh
-  python train_classifier.py DisasterResponse.db classifier.pkl
-  Running the Web App
+    ```sh
+    python process_data.py disaster_messages.csv disaster_categories.csv DisasterResponse.db
+  
+5. ML Pipeline:
+    ```sh
+    python train_classifier.py DisasterResponse.db classifier.pkl
+    
+6. Running the Web App
   Run the Flask app:
+    ```sh
+    python run.py
+    Open the app in your browser:
+    Navigate to http://localhost:3001/
 
-   ```sh
-  python run.py
-  Open the app in your browser:
-  Navigate to http://localhost:3001/
+### File Descriptions
 
-File Descriptions
 process_data.py: Script to process and clean the data.
 train_classifier.py: Script to train the machine learning model.
 run.py: Flask application.
