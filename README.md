@@ -57,23 +57,22 @@ Install the required libraries:
 pip install -r requirements.txt
 Download NLTK data:
 
-sh
-Copy code
+
+ ```sh
 python -m nltk.downloader punkt stopwords wordnet
 Running the Pipelines
 ETL Pipeline:
-sh
-Copy code
+
+ ```sh
 python process_data.py disaster_messages.csv disaster_categories.csv DisasterResponse.db
 ML Pipeline:
-sh
-Copy code
+
+ ```sh
 python train_classifier.py DisasterResponse.db classifier.pkl
 Running the Web App
 Run the Flask app:
 
-sh
-Copy code
+ ```sh
 python run.py
 Open the app in your browser:
 Navigate to http://localhost:3001/
