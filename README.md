@@ -53,9 +53,11 @@ A web application that:
    cd your_repository
 Install the required libraries:
 
+
+2.Install the required libraries
   ```sh
   pip install -r requirements.txt
-  Download NLTK data:
+Download NLTK data:
 
 
    ```sh
