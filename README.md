@@ -51,21 +51,20 @@ A web application that:
    ```sh
    git clone https://github.com/your_username/your_repository.git
    cd your_repository
-Install the required libraries:
 
 
-2.Install the required libraries
+
+2.Install the required libraries:
   ```sh
   pip install -r requirements.txt
-Download NLTK data:
 
-
-   ```sh
+3.Download NLTK data:
+  ```sh
   python -m nltk.downloader punkt stopwords wordnet
-  Running the Pipelines
-  ETL Pipeline:
 
-   ```sh
+4.Running the Pipelines
+ETL Pipeline:
+  ```sh
   python process_data.py disaster_messages.csv disaster_categories.csv DisasterResponse.db
   ML Pipeline:
 
