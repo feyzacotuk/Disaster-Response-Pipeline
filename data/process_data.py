@@ -33,11 +33,27 @@ def clean_data(df):
     row = categories.iloc[0]
     category_colnames = row.apply(lambda x: x[:-2])
     categories.columns = category_colnames
+
     for column in categories:
         categories[column] = categories[column].str[-1].astype(int)
+    
+    # Drop rows with a value of 2 in any category
+    for column in categories:
+        categories = categories[categories[column] != 2]
+    
     df = df.drop('categories', axis=1)
     df = pd.concat([df, categories], axis=1)
+    
+    # Drop duplicates
     df.drop_duplicates(inplace=True)
+    
+    # Sanity checks, excluding 'id' column
+    numeric_cols = df.select_dtypes(include=[np.number]).columns.tolist()
+    numeric_cols.remove('id')
+    print(f"Categories with values greater than 1: {df[numeric_cols].apply(lambda x: x[x > 1].count())}")
+    assert df.duplicated().sum() == 0, "There are still duplicates in the dataset"
+    assert (df[numeric_cols] > 1).sum().sum() == 0, "There are values greater than 1 in the dataset"
+
     return df
 
 def save_data(df, database_filename):
