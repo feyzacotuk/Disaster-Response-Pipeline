@@ -54,11 +54,11 @@ A web application that:
 
 
 
-2.Install the required libraries:
-  ```sh
-  pip install -r requirements.txt
+2. Install the required libraries:
+    ```sh
+    pip install -r requirements.txt
 
-3.Download NLTK data:
+3. Download NLTK data:
   ```sh
   python -m nltk.downloader punkt stopwords wordnet
 
