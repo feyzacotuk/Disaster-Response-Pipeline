@@ -44,42 +44,40 @@ A web application that:
 ### Prerequisites
 - Python 3.6+
 - Libraries: pandas, numpy, sqlalchemy, nltk, scikit-learn, Flask, Plotly, pickle
-- SQLite
+- SQLite and more you can find all in requirements.txt
 
 ### Installation
 1. Clone the repository:
    ```sh
    git clone https://github.com/your_username/your_repository.git
    cd your_repository
-Install the required libraries:
 
-sh
-Copy code
-pip install -r requirements.txt
-Download NLTK data:
+2. Install the required libraries:
+    ```sh
+    pip install -r requirements.txt
 
-sh
-Copy code
-python -m nltk.downloader punkt stopwords wordnet
-Running the Pipelines
+3. Download NLTK data:
+    ```sh
+    python -m nltk.downloader punkt stopwords wordnet
+
+4. Running the Pipelines
 ETL Pipeline:
-sh
-Copy code
-python process_data.py disaster_messages.csv disaster_categories.csv DisasterResponse.db
-ML Pipeline:
-sh
-Copy code
-python train_classifier.py DisasterResponse.db classifier.pkl
-Running the Web App
-Run the Flask app:
+    ```sh
+    python process_data.py disaster_messages.csv disaster_categories.csv DisasterResponse.db
+  
+5. ML Pipeline:
+    ```sh
+    python train_classifier.py DisasterResponse.db classifier.pkl
+    
+6. Running the Web App
+  Run the Flask app:
+    ```sh
+    python run.py
+    Open the app in your browser:
+    Navigate to http://localhost:3001/
 
-sh
-Copy code
-python run.py
-Open the app in your browser:
-Navigate to http://localhost:3001/
+### File Descriptions
 
-File Descriptions
 process_data.py: Script to process and clean the data.
 train_classifier.py: Script to train the machine learning model.
 run.py: Flask application.
@@ -89,3 +87,8 @@ data: Folder containing the raw datasets.
 app: Folder containing the web app templates and static files.
 Acknowledgements
 This project is part of the Udacity Data Scientist Nanodegree. The datasets used in this project are provided by Figure Eight.
+
+![image](https://github.com/user-attachments/assets/a62ce6f6-7213-4cc6-bac0-f208afade891)
+
+![image](https://github.com/user-attachments/assets/76b976f3-34e5-41a2-becd-44d1e56b8f70)
+
