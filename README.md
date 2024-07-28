@@ -90,5 +90,6 @@ This project is part of the Udacity Data Scientist Nanodegree. The datasets used
 
 ![image](https://github.com/user-attachments/assets/a62ce6f6-7213-4cc6-bac0-f208afade891)
 
-![image](https://github.com/user-attachments/assets/76b976f3-34e5-41a2-becd-44d1e56b8f70)
+![image](https://github.com/user-attachments/assets/0c3d3d3c-75f8-42b3-9c17-890ec10da354)
+
 
