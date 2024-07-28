@@ -44,7 +44,7 @@ A web application that:
 ### Prerequisites
 - Python 3.6+
 - Libraries: pandas, numpy, sqlalchemy, nltk, scikit-learn, Flask, Plotly, pickle
-- SQLite
+- SQLite and more you can find all in requirements.txt
 
 ### Installation
 1. Clone the repository:
@@ -87,3 +87,8 @@ data: Folder containing the raw datasets.
 app: Folder containing the web app templates and static files.
 Acknowledgements
 This project is part of the Udacity Data Scientist Nanodegree. The datasets used in this project are provided by Figure Eight.
+
+![image](https://github.com/user-attachments/assets/a62ce6f6-7213-4cc6-bac0-f208afade891)
+
+![image](https://github.com/user-attachments/assets/76b976f3-34e5-41a2-becd-44d1e56b8f70)
+
